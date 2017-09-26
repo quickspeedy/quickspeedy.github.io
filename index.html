@@ -5,24 +5,100 @@
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/portfolio">Portfolio</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="header">
-        		<h1>Daniel Saavedra</h1>
-    		</div><!-- /.header -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:daniel.saavedra17@outlook.com">email</a></li>
-        		<li><a href="https://github.com/quickspeedy">github.com/quickspeedy</a></li>
-			</ul>
-		</footer>
-	</body>
+	<body data-spy="scroll" data-target="#navBarNav" data-offset="70">
+  <div class="container-fluid">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Daniel Saavedra</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarNav" aria-controls="navBarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navBarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>   
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>  
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>  
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="bg" id="home" >
+      <h1 class="text-center title invisibility">Web Developer</h1>
+      <h3 class="text-center subtitle invisibility">-- Daniel Saavedra --</h3>   
+    </div>
+    <div class="jumbotron aboutMeSection" id="about">
+      <h2 class="text-center aboutHeader">About Me</h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <h4 class="text-center">"Self-driven and believes in teamwork."</h4>
+        </div>
+        <div class="col-md-8 col-sm-8">
+          <p>I grew up in Illinois and moved to New York to enroll at Rochester Institute of Technology (RIT). Ever since then, I have been intrigued with web development and it has lead me to learn a variety of programming languages and skill sets. Currently, I am pursuing my Bachelors of Science degree in Information Technology and I am expected to graduate in Spring 2018.</p>
+
+          <p>In my spare time, I enjoy playing different kinds of sports but mainly soccer. Not only do I enjoy sports, I also like photography and I enjoy taking photographs of pretty much anything! It has helped me learn how visual really impacts us. Hence, why I love to design websites to help improve the user's experience! </p>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron portfolioSection" id="portfolio">
+      <h2 class="text-center portfolio-title">Portfolio</h2>
+      <div class="row justify-content-around portfolioAnimate">
+        <div class="col-md-3 col-sm-6"><img src="https://static1.squarespace.com/static/56d77cec37013bbd82596472/t/588a3ceef7e0ab0d414897fd/1485454575406/portfolio-2.jpg?format=1500w" class="img-thumbnail"/></div>
+        <div class="col-md-3 col-sm-6"><img src="https://static1.squarespace.com/static/56d77cec37013bbd82596472/t/588a3ceef7e0ab0d414897fd/1485454575406/portfolio-2.jpg?format=1500w" class="img-thumbnail"/></div>
+        <div class="col-md-3 col-sm-6"><img src="https://static1.squarespace.com/static/56d77cec37013bbd82596472/t/588a3ceef7e0ab0d414897fd/1485454575406/portfolio-2.jpg?format=1500w" class="img-thumbnail"/></div>
+        <div class="col-md-3 col-sm-6"><img src="https://static1.squarespace.com/static/56d77cec37013bbd82596472/t/588a3ceef7e0ab0d414897fd/1485454575406/portfolio-2.jpg?format=1500w" class="img-thumbnail"/></div>
+      </div>
+    </div>
+
+    <div class="jumbotron contactMeSection" id="contact">
+      <h2 class="text-center">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-4 ml-md-auto mr-md-auto form-padding">
+          <form>
+            <div class="form-group">
+              <label for="nameInput">Name</label>
+              <input type="text" class="form-control" id="nameInput" aria-describedby="nameHelp" placeholder="Enter name">
+              <small id="nameHelp" class="form-text text-muted">We'll never share your name with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="emailInput">Email</label>
+              <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="messageInput">Message</label>
+              <textarea class="form-control" id="messageInput" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  end of container-fluid  -->
+  <footer class="footer-bg">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-3 ml-md-auto mr-md-auto">
+            <ul class="social-links">
+              <li><a href="https://www.facebook.com/Quickspeedy" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.linkedin.com/pub/daniel-saavedra/89/a87/780" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+  </a></li>
+              <li><a href="https://www.instagram.com/quickspeedy_photography" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+  </a></li>
+            </ul>
+          </div>
+        </div>
+        <h6 class="text-center footerHeader">© 2017 Daniel Saavedra</h6>
+    </div>
+  </footer>
+</body>
 </html>
