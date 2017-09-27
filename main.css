@@ -2,6 +2,7 @@ body,html {
   min-height: 100vh;
   overflow-x:hidden;
   position:relative;
+  font-family: 'Open Sans';
 }
 html {
   font-size: 14px;
