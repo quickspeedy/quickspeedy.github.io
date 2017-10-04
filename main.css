@@ -3,6 +3,7 @@ body,html {
   overflow-x:hidden;
   position:relative;
   font-family: 'Open Sans';
+/*   background: #E9ECEF; */
 }
 html {
   font-size: 14px;
@@ -30,9 +31,19 @@ html {
 .container-fluid{
   padding:0;
 }
-/* .jumbotron {
-  background-color: #0074D9;
+.jumbotron {
+/*   background-color: #0074D9; */
   border-radius: 0;
+  margin-bottom: 0 !important;
+  margin-left:15% !important;
+  margin-right:15% !important;
+}
+/* @media (min-width: 576px) {
+  .jumbotron {
+    padding: 4rem 2rem;
+    margin-left:0 !important;
+    margin-right:0 !important;
+  }
 } */
 .bg {
   background:
@@ -48,11 +59,6 @@ html {
   background-attachment: fixed;
   position: relative;
   z-index:1;
-}
-.img-thumbnail {
-  border:0;
-  box-shadow:0;
-  border-radius: 0;
 }
 .form-padding {
   padding: 30px;
@@ -72,13 +78,39 @@ html {
   margin-right:10px;
   margin-top: 15px;
 }
+.bg-grey {
+  background: #E9ECEF;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.bg-dark {
+  background: #343a40;
+  width: 100%;
+  margin-bottom: 2rem;
+}
 .aboutMeSection, .portfolioSection, .contactMeSection {
-  margin: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 .portfolioSection {
   background-color: #343a40;
   border-radius: 0;
 }
+
+.portfoliotron {
+  padding: 2rem 1rem;
+/*   margin-bottom: 2rem; */
+  background-color: #343a40;
+  margin-left:15% !important;
+  margin-right:15% !important;
+}
+
+@media (min-width: 576px) {
+  .portfoliotron {
+    padding: 4rem 2rem;
+  }
+}
+
 .aboutHeader {
   margin-bottom: 30px;
 }
@@ -93,7 +125,7 @@ html {
   position: relative;
 }
 
-.portfolioAnimate > div:hover {
+/* .portfolioAnimate > div:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -106,15 +138,174 @@ html {
 	-moz-transition: all .4s ease-in-out;
 	-o-transition: all .4s ease-in-out;
 	-ms-transition: all .4s ease-in-out;
-}
-
-.col-md-3 {
-  margin-top: 10px;
-}
+} */
 .portfolio-title {
   color: white;
   margin-bottom: 25px;
 }
 .invisibility {
   display:none;
+}
+
+/*--------------------------------*/
+/***** Portfolio Common style *****/
+/*--------------------------------*/
+
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+.grid h2{
+    font-size: 20px;
+}
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 100%;
+	max-width: 100%;
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: auto;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+figure.effect-bubba {
+	background: #2B2828;
+}
+
+figure.effect-bubba img {
+	opacity: 0.3;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+	opacity: 0.7;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(2,0);
+	transform: scale(2,0);
+}
+
+figure.effect-bubba h2 {
+	padding-top: 10%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+    color: #fff;
+}
+
+figure.effect-bubba p {
+	padding: 20px 2.5em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
