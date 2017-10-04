@@ -81,12 +81,12 @@ html {
 .bg-grey {
   background: #E9ECEF;
   width: 100%;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 .bg-dark {
   background: #343a40;
   width: 100%;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 .aboutMeSection, .portfolioSection, .contactMeSection {
     margin-right: auto;
