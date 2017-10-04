@@ -124,21 +124,6 @@ html {
 #navBarNav {
   position: relative;
 }
-
-/* .portfolioAnimate > div:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.portfolioAnimate > div {
-	-webkit-transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	-ms-transition: all .4s ease-in-out;
-} */
 .portfolio-title {
   color: white;
   margin-bottom: 25px;
